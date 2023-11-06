@@ -1,0 +1,14 @@
+Package: CellMarkerR
+Type: Package
+Title: CellMarkerR 
+Description: Using R language to locally deploy CellMarker tools based on the database publicly available on the CellMarker website.
+Version: 1.0.0
+Date: 2023-11-06
+Author: KIRAZERO
+Maintainer: KIRAZERO <914489374@qq.com>
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    R6,glue,openxlsx,ggplot2,htmlwidgets,wordcloud2
+RoxygenNote: 7.2.3
