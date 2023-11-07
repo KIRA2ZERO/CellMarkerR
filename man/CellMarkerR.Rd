@@ -7,8 +7,8 @@
 This class contains two core drawing functions of CellMarker website.
 }
 \note{
-If the function viewCell has not been executed, it will return NULL.
-If the function viewCell fails to execute successfully, it will return the result of the last successful execution.
+If the function viewMarker or viewCell has not been executed, ChartResult and TableResult will get NULL.
+If the function viewMarker or viewCell fails to execute successfully, ChartResult and TableResult will remain the result of the last successful execution.
 }
 \section{Methods}{
 \subsection{Public methods}{
@@ -44,8 +44,6 @@ Creates a new instance of this [R6][R6::R6Class] class.
 \if{latex}{\out{\hypertarget{method-CellMarker-getViewMarkerChartResult}{}}}
 \subsection{Method \code{getViewMarkerChartResult()}}{
 Return the image result of the function viewMarker , which is a plotly object.
-If the function viewMarker has not been executed, it will return NULL.
-If the function viewMarker fails to execute successfully, it will return the result of the last successful execution.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{CellMarkerR$getViewMarkerChartResult()}\if{html}{\out{</div>}}
 }
@@ -56,8 +54,6 @@ If the function viewMarker fails to execute successfully, it will return the res
 \if{latex}{\out{\hypertarget{method-CellMarker-getViewMarkerTableResult}{}}}
 \subsection{Method \code{getViewMarkerTableResult()}}{
 Return the table result of the function viewMarker , which is a data.frame object.
-If the function viewMarker has not been executed, it will return NULL.
-If the function viewMarker fails to execute successfully, it will return the result of the last successful execution.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{CellMarkerR$getViewMarkerTableResult()}\if{html}{\out{</div>}}
 }
@@ -148,8 +144,6 @@ Draw a dynamic lattice diagram by R package plotly to show the query results of 
 \if{latex}{\out{\hypertarget{method-CellMarker-getViewCellChartResult}{}}}
 \subsection{Method \code{getViewCellChartResult()}}{
 Return the image result of the function viewCell , which is a plotly object.
-If the function viewCell has not been executed, it will return NULL.
-If the function viewCell fails to execute successfully, it will return the result of the last successful execution.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{CellMarkerR$getViewCellChartResult()}\if{html}{\out{</div>}}
 }
@@ -160,8 +154,6 @@ If the function viewCell fails to execute successfully, it will return the resul
 \if{latex}{\out{\hypertarget{method-CellMarker-getViewCellTableResult}{}}}
 \subsection{Method \code{getViewCellTableResult()}}{
 Return the table result of the function viewCell , which is a data.frame object.
-If the function viewCell has not been executed, it will return NULL.
-If the function viewCell fails to execute successfully, it will return the result of the last successful execution.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{CellMarkerR$getViewCellTableResult()}\if{html}{\out{</div>}}
 }

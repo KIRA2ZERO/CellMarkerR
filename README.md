@@ -5,6 +5,8 @@ CellMarkerR is a localized tool that includes two core drawing functions. These 
 
 ## Getting Started
 
+Recommend R language >= 3.6
+
 ### Step.1 Install package dependencies
 
 (Option A) Use R language code to install dependent packages.
@@ -46,17 +48,17 @@ CellMarker = CellMarkerR$new()
 # viewMarker
 CellMarker$viewMarker(marker="CD4")
 CellMarker$getViewMarkerTableResult()
-CellMarker$saveViewMarkerChartResult(filePath) # File suffix name must be html
-CellMarker$saveViewMarkerTableResult(filePath) # File suffix name must be one of c('csv','xlsx')
+CellMarker$saveViewMarkerChartResult(filePath) 
+CellMarker$saveViewMarkerTableResult(filePath) 
 
 # viewCell
 CellMarker$viewCell()
 CellMarker$getViewCellChartResult()
 CellMarker$getViewCellTableResult()
 CellMarker$getViewCellRankResult()
-CellMarker$saveViewCellChartResult(filePath) # File suffix name must be html
-CellMarker$saveviewCellTableResult(filePath) # File suffix name must be one of c('csv','xlsx')
-CellMarker$saveviewCellTableResult(filePath) # File suffix name must be one of c('csv','xlsx')
+CellMarker$saveViewCellChartResult(filePath) 
+CellMarker$saveviewCellTableResult(filePath) 
+CellMarker$saveviewCellTableResult(filePath) 
 ```
 
 

@@ -3,6 +3,9 @@
 #' @description
 #' This class contains two core drawing functions of CellMarker website.
 #'
+#' @note 
+#' If the function viewMarker or viewCell has not been executed, ChartResult and TableResult will get NULL.
+#' If the function viewMarker or viewCell fails to execute successfully, ChartResult and TableResult will remain the result of the last successful execution. 
 #' @export
 CellMarkerR = R6::R6Class(
     classname = "CellMarker",
@@ -16,21 +19,16 @@ CellMarkerR = R6::R6Class(
         },
         #' @description
         #' Return the image result of the function viewMarker , which is a plotly object.
-        #' If the function viewMarker has not been executed, it will return NULL.
-        #' If the function viewMarker fails to execute successfully, it will return the result of the last successful execution. 
         getViewMarkerChartResult = function() {
             return (private$viewMarkerChartResult)
         },
         #' @description
-        #' Return the table result of the function viewMarker , which is a data.frame object.
-        #' If the function viewMarker has not been executed, it will return NULL.
-        #' If the function viewMarker fails to execute successfully, it will return the result of the last successful execution.         
+        #' Return the table result of the function viewMarker , which is a data.frame object. 
         getViewMarkerTableResult = function() {
             return (private$viewMarkerTableResult)
         },
         #' @description
         #' Save the image result of the function viewMarker.
-        #' 
         #' @param filePath 
         #' A complete file path, but the file extension must be html.       
         saveViewMarkerChartResult = function(filePath) {
@@ -38,7 +36,6 @@ CellMarkerR = R6::R6Class(
         },
         #' @description
         #' Save the table result of the function viewMarker.
-        #' 
         #' @param filePath 
         #' A complete file path, but the file extension must be csv or xlsx.         
         saveViewMarkerTableResult = function(filePath) {
@@ -46,7 +43,6 @@ CellMarkerR = R6::R6Class(
         },   
         #' @description
         #' Draw a dynamic lattice diagram by R package plotly to show the query results of a specified marker in the CellMarker database.
-        #' 
         #' @param symbol
         #' Seclect the symbol to query.Only one of the parameters symbol marker or geneid can be filled at a time.
         #' @param marker
@@ -108,30 +104,21 @@ CellMarkerR = R6::R6Class(
         },            
         #' @description
         #' Return the image result of the function viewCell , which is a plotly object.
-        #' If the function viewCell has not been executed, it will return NULL.
-        #' If the function viewCell fails to execute successfully, it will return the result of the last successful execution. 
         getViewCellChartResult = function() {
             return (private$viewCellChartResult)
         },
         #' @description
-        #' Return the table result of the function viewCell , which is a data.frame object.
-        #' If the function viewCell has not been executed, it will return NULL.
-        #' If the function viewCell fails to execute successfully, it will return the result of the last successful execution.         
+        #' Return the table result of the function viewCell , which is a data.frame object.    
         getViewCellTableResult = function() {
             return (private$viewCellTableResult)
         },  
         #' @description
-        #' Return the rank result of the function viewCell , which is a data.frame object.
-        #' 
-        #' @note
-        #' If the function viewCell has not been executed, it will return NULL.
-        #' If the function viewCell fails to execute successfully, it will return the result of the last successful execution.                  
+        #' Return the rank result of the function viewCell , which is a data.frame object.           
         getViewCellRankResult = function() {
             return (private$viewCellRankResult)
         },    
         #' @description
         #' Save the image result of the function viewCell.
-        #' 
         #' @param filePath 
         #' A complete file path, but the file extension must be html.          
         saveViewCellChartResult = function(filePath) {
@@ -139,7 +126,6 @@ CellMarkerR = R6::R6Class(
         },  
         #' @description
         #' Save the table result of the function viewCell.
-        #' 
         #' @param filePath 
         #' A complete file path, but the file extension must be csv or xlsx.             
         saveViewCellTableResult = function(filePath) {
@@ -147,7 +133,6 @@ CellMarkerR = R6::R6Class(
         },             
         #' @description
         #' Save the rank result of the function viewCell.
-        #' 
         #' @param filePath 
         #' A complete file path, but the file extension must be csv or xlsx.            
         saveViewCellRankResult = function(filePath) {

@@ -1,7 +1,7 @@
 Package: CellMarkerR
 Type: Package
 Title: CellMarkerR 
-Description: Using R language to locally deploy CellMarker tools based on the database publicly available on the CellMarker website.
+Description: CellMarkerR is a localized tool that includes two core drawing functions. These functions are based on the database that is publicly available on the CellMarker website.(http://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarkerSearch.jsp)
 Version: 1.0.0
 Date: 2023-11-06
 Author: KIRAZERO
@@ -10,5 +10,5 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports:
-    R6,glue,openxlsx,ggplot2,htmlwidgets,wordcloud2
+    R6,glue,openxlsx,ggplot2,htmlwidgets,wordcloud2,plotly
 RoxygenNote: 7.2.3
