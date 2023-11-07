@@ -42,15 +42,20 @@ devtools::install_github("KIRA2ZERO/CellMarkerR")
 library(CellMarkerR)
 CellMarker = CellMarkerR$new()
 ```
-### Step.4 Use class methods
+### Step.4 Use R6 class methods
 
 ```
 # viewMarker
 CellMarker$viewMarker(marker="CD4")
+CellMarker$getViewMarkerChartResult()
 CellMarker$getViewMarkerTableResult()
 CellMarker$saveViewMarkerChartResult(filePath) 
 CellMarker$saveViewMarkerTableResult(filePath) 
+```
 
+![Alt text](ChartReuslt_example/viewMarkerChartResult_example.png)
+
+```
 # viewCell
 CellMarker$viewCell()
 CellMarker$getViewCellChartResult()
@@ -58,7 +63,8 @@ CellMarker$getViewCellTableResult()
 CellMarker$getViewCellRankResult()
 CellMarker$saveViewCellChartResult(filePath) 
 CellMarker$saveviewCellTableResult(filePath) 
-CellMarker$saveviewCellTableResult(filePath) 
+CellMarker$saveviewCellRankResult(filePath) 
 ```
 
+![Alt text](ChartReuslt_example/viewCellChartResult_example.png)
 
